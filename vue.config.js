@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/spa-app/'
-}
+  publicPath: '/spa-app/',
+};

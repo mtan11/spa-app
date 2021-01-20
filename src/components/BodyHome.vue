@@ -114,13 +114,13 @@
           <div
             v-for="item in filteredProjects"
             :key="item.id"
-            class="container__card"
+            class="container__card p-2"
             style="position: relative"
           >
             <div
               class="card"
-              v-bind:style="{
-                background: 'url(' + item.urlImage + ') center center/cover',
+              :style="{
+                background: 'url(' + getImgUrl(item.urlImage) + ') center center/cover',
               }"
             ></div>
             <div class="text">
@@ -192,6 +192,7 @@
 export default {
   data() {
     return {
+      assets: '../assets/projects/haichau',
       aboutInfo: [
         {
           data: [
@@ -221,7 +222,7 @@ export default {
       projects: [
         {
           id: 1,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -229,7 +230,7 @@ export default {
         },
         {
           id: 2,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -238,7 +239,7 @@ export default {
         },
         {
           id: 3,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -247,7 +248,7 @@ export default {
         },
         {
           id: 4,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -256,7 +257,7 @@ export default {
         },
         {
           id: 5,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -264,7 +265,7 @@ export default {
         },
         {
           id: 6,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -272,7 +273,7 @@ export default {
         },
         {
           id: 7,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -281,7 +282,7 @@ export default {
         },
         {
           id: 8,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -289,7 +290,7 @@ export default {
         },
         {
           id: 9,
-          urlImage: '/img/ND_1.jpg',
+          urlImage: 'projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -312,6 +313,12 @@ export default {
     setup() {},
     filter(state) {
       this.currentTag = state;
+    },
+    getImgUrl(pic) {
+      /* eslint-disable global-require */
+      const img = require(`../assets/${pic}`);// eslint-disable-line import/no-dynamic-require
+      return img;
+      /* eslint-enable global-require */
     },
   },
 };
@@ -352,7 +359,7 @@ export default {
   .container__card {
     .card {
       height: 300px;
-      width: 380px;
+      width: 360px;
       transition: 1s ease-in-out;
       border: none;
     }
