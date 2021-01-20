@@ -221,7 +221,7 @@ export default {
       projects: [
         {
           id: 1,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -229,7 +229,7 @@ export default {
         },
         {
           id: 2,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -238,7 +238,7 @@ export default {
         },
         {
           id: 3,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -247,7 +247,7 @@ export default {
         },
         {
           id: 4,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -256,7 +256,7 @@ export default {
         },
         {
           id: 5,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -264,7 +264,7 @@ export default {
         },
         {
           id: 6,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -272,7 +272,7 @@ export default {
         },
         {
           id: 7,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -281,7 +281,7 @@ export default {
         },
         {
           id: 8,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
@@ -289,7 +289,7 @@ export default {
         },
         {
           id: 9,
-          urlImage: '/img/projects/haichau/ND_1.jpg',
+          urlImage: '../assets/projects/haichau/ND_1.jpg',
           title: 'Thông tin quy hoạch',
           subTitle: 'Laravel / PHP',
           active: false,
